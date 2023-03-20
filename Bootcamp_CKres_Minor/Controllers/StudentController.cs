@@ -1,11 +1,13 @@
 ﻿using Bootcamp_CKres_Minor.Helper;
 using Bootcamp_CKres_Minor.Input;
 using Bootcamp_CKres_Minor.Output;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bootcamp_CKres_Minor.Controllers
 {
+    [EnableCors]
     [Route("api/[controller]")]
     [ApiController]
     public class StudentController : ControllerBase
